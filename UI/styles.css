@@ -1,0 +1,178 @@
+
+*{
+    box-sizing: border-box;
+}
+.header{
+    width: auto;
+    height: 150px;
+
+
+}
+.space25 {
+    height: 600px;
+    width: 25%;
+    /*min-width: 220px;*/
+    float: left;
+
+    margin: 5px auto;
+    background-size: 200px;
+    border-radius: 7px;
+    padding: 3px 5px 3px 5px;
+}
+.tagblock{
+    height: 600px;
+    width: 220px;
+    background: rgba(97, 18, 2, 0.61);
+    border-radius: 7px;
+    padding: 0.1% 3%;
+    align: left;
+}
+.space75 {
+    height: 100%;
+    width: 75%;
+    /*min-width: 700px;*/
+    float: left;
+    /*opacity: 0.8;*/
+    margin: 1px auto;
+}
+.space30 {
+
+    height: 100%;
+    width: 30%;
+    min-width: 150px;
+    float: right;
+    background: rgba(255, 255, 72, 0.5);
+    margin: 10px ;
+    padding: 1.5%;
+    background-size: 100%;
+    border-radius: 10px;
+
+    /* opacity: 0.2;*/
+}
+.global{
+    height: 1100px;
+    min-width: 1000px;
+}
+.logo{
+    background: url("http://www.fotohost.by/images/2017/02/26/LOGOTIPIIMY.png") no-repeat center center;
+    width: 70%;
+    height: 150px;
+    margin: 1px auto;
+    background-size: 500px;
+    display: block;
+    float: left;
+
+}
+.gorizontal {
+    height: 33%;
+    margin: 5px;
+    /*width: 1000px;*/
+    /*opacity: 0.8;*/
+}
+.colorTag{
+    background: #a4ff00;
+    opacity: 0.8;
+}
+.hederLine{
+    background: url("http://www.fotohost.by/images/2017/02/26/POLOSAVKEDERE.png") no-repeat center left;
+    width: 1052px;
+    height: 40px;
+    margin: 1px auto;
+    background-size: 100%;
+}
+body{
+    background: url("http://www.fotohost.by/images/2017/02/26/gandex.ru-26_8199_abstract.jpg");
+    min-width: 800px;
+    background-size: 128% ;
+    /*opacity: 0.8;*/
+}
+.next{
+    hight: 10px;
+
+}
+.sort{
+    height: 30px;
+    width: 500px;
+    margin: 3px;
+
+}
+button.select{
+    background: #211442;
+    color: navajowhite;
+    border-radius: 5px;
+}
+.userblock{
+    width: 30%;
+    height: 150px;
+    margin: 1px auto;
+    float: left;
+}
+select.user{
+    background: rgba(43, 43, 43, 0.3);
+    width: 200px;
+    height: 40px;
+    color: navajowhite;
+    border-radius: 5px;
+    align-content: center;
+
+}
+select.user:hover {
+    background: rgba(43, 43, 43, 0.5);
+}
+option.menu{
+    background: #585161;
+    color: navajowhite;
+}
+textarea.tag{
+    border-radius: 7px;
+    background:rgba(43, 43, 43, 0.3);
+    color: #a4ff00;
+    height: 75%;
+    width: 95%;
+    font-size: larger;
+
+}
+.footer{
+    height: 50px;
+    background: url("http://www.fotohost.by/images/2017/02/26/FUTOR.png");
+    background-size: 100%;
+    color: navajowhite;
+
+}
+ins.getnews{
+    background: url("полоса в хедере.png") right ;
+    height: 10px;
+
+}
+ins.getnews:hover{
+    background: url("теги.png") center;
+    height: 10px;
+    border-radius: 5px;
+}
+img.opasity{
+    opacity: 1;
+}
+button.transparency{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+    color: white;
+    border: rgb(0, 0, 0);
+    width: 90px;
+}
+button.transparency:hover{
+    background: rgba(0, 0, 0, 0.40);
+}
+button.delete{
+    height: 35px;
+    width: 35px;
+    background: rgba(233, 233, 71, 1);
+    color: rgb(156, 156, 49);
+    align: right;
+    border-radius: 30px;
+    border: rgba(241,241,71,0.5);
+    font-size: 30px;
+
+}
+button.delete:hover {
+    background: rgb(184, 184, 49);
+}
