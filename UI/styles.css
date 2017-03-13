@@ -184,21 +184,40 @@ button.transparency:hover{
     background: rgba(0, 0, 0, 0.40);
 }
 button.delete{
+     height: 2.3vw;
+     width: 2.3vw;
+     font-size: 2vw;
+     min-height: 10px;
+     min-width: 10px;
+
+     background: rgba(233, 233, 71, 0);
+     color: rgb(156, 156, 49);
+     align: right;
+
+     border: rgba(241,241,71,0);
+
+ }
+button.delete:hover {
+    color: rgb(80, 80, 28);
+}
+button.edit{
     height: 2.3vw;
     width: 2.3vw;
     font-size: 2vw;
     min-height: 10px;
     min-width: 10px;
 
-    background: rgba(233, 233, 71, 0);
+    background: url("http://images.vfl.ru/ii/1489360895/9501e0a8/16437530_s.png") no-repeat center;
+    background-size: 1.8vw ;
     color: rgb(156, 156, 49);
     align: right;
-
     border: rgba(241,241,71,0);
 
 }
-button.delete:hover {
-    color: rgb(80, 80, 28);
+button.edit:hover {
+    /*color: rgb(80, 80, 28);*/
+    background: url("http://images.vfl.ru/ii/1489360811/fdeb3ffc/16437528.png") no-repeat center;
+    background-size: 1.8vw ;
 }
 .tegline
 {
@@ -219,15 +238,16 @@ button.delete:hover {
     background: black;
 }
 .tagspace{
-    width: 85%;
+    width: 76%;
     float: left;
     padding: 2%;
 }
 .deletespace{
-    width: 15%;
-    float: left;
+    width: 12%;
+    float: right;
 
 }
+
 .calendar{
 
     width: 130px;
@@ -248,4 +268,11 @@ button.delete:hover {
 
     width: 50%;
     float: left;
+}
+.tag-tag{
+    background: #a4ff00;
+    opacity: 0;
+}
+.select-tag{
+    background: #6d3f27;
 }
