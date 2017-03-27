@@ -1,0 +1,469 @@
+
+*{
+    box-sizing: border-box;
+}
+.header{
+    width: auto;
+    height: 150px;
+
+
+}
+.space25 {
+    height: 600px;
+    width: 25%;
+    float: left;
+
+    padding: 3px 5px 3px 5px;
+    margin: 5px auto;
+
+    border-radius: 7px;
+
+}
+.tagblock{
+    height: 600px;
+    width: 220px;
+
+    background: rgba(97, 18, 2, 0.61);
+    border-radius: 7px;
+
+    padding: 0.1% 3%;
+
+    align: left;
+}
+.space75 {
+    height: 100%;
+    width: 75%;
+
+    float: left;
+    padding-left: 5vw ;
+    margin: 1px auto;
+}
+.space30 {
+
+    height: 100%;
+    width: 30%;
+    min-width: 150px;
+
+    float: left;
+
+    background: rgba(152, 152, 153, 0.7);
+    background-size: 100%;
+    border-radius: 10px;
+
+    margin: 10px ;
+
+}
+.global{
+    height: 1100px;
+    min-width: 1000px;
+}
+.logo{
+    background: url("http://www.fotohost.by/images/2017/02/26/LOGOTIPIIMY.png") no-repeat center center;
+    background-size: 500px;
+
+    width: 70%;
+    height: 150px;
+
+    margin: 1px auto;
+
+    display: block;
+
+    float: left;
+
+}
+.gorizontal {
+    height: 33%;
+    margin: 5px;
+
+}
+.colorTag{
+    background: #a4ff00;
+    opacity: 0.8;
+}
+.hederLine{
+    background: url("http://www.fotohost.by/images/2017/02/26/POLOSAVKEDERE.png") no-repeat center left;
+    background-size: 100%;
+
+    width: 1052px;
+    height: 40px;
+    margin: 1px auto;
+
+}
+body{
+    min-width: 800px;
+    background-size: 100% ;
+    background: url("https://pp.userapi.com/c637516/v637516975/34973/cHTukITLmQM.jpg");
+
+}
+.next{
+    hight: 10px;
+
+}
+.sort{
+    height: 30px;
+    width: 600px;
+    margin: 3px;
+
+}
+button.select{
+    background: #211442;
+    color: navajowhite;
+    border-radius: 5px;
+}
+.userblock{
+    width: 30%;
+    height: 150px;
+    margin: 1px auto;
+    float: left;
+}
+.user{
+
+    width: 200px;
+    height: 65px;
+
+    background: rgba(43, 43, 43, 0.3);
+
+    border-radius: 5px;
+    align-content: center;
+
+    margin-top: 10px;
+
+    display: none;
+
+}
+
+
+.button-user{
+
+    width: 200px;
+    height: 30px;
+
+    background: rgba(43, 43, 43, 0.3);
+    color: navajowhite;
+    border-radius: 5px;
+    align-content: center;
+
+    border: none;
+
+    /*display: none;*/
+
+}
+.button-user:hover {
+    background: rgba(43, 43, 43, 0.5);
+}
+
+select.autor-select{
+
+    width: 100px;
+    height: 30px;
+
+    background: rgba(43, 43, 43, 0.3);
+    color: navajowhite;
+    border-radius: 5px;
+    align-content: center;
+
+}
+select.autor-select:hover {
+    background: rgba(43, 43, 43, 0.5);
+}
+option.menu{
+    background: #585161;
+    color: navajowhite;
+}
+textarea.tag{
+    border-radius: 7px;
+    background:rgba(43, 43, 43, 0.3);
+    color: #a4ff00;
+
+    height: 75%;
+    width: 95%;
+    font-size: larger;
+    resize: none;
+
+    margin-top: 10px;
+
+}
+.tag-select{
+    height: 25px;
+    width: 80px;
+
+    background: rgba(43, 43, 43, 0.3);
+    color: navajowhite;
+    border-radius: 5px;
+    align-content: center;
+
+}
+.tag-select:hover{
+    background: rgba(43, 43, 43, 0.5);
+}
+.footer{
+    height: 50px;
+
+    background: url("http://www.fotohost.by/images/2017/02/26/FUTOR.png");
+    background-size: 100%;
+    color: #ffdead;
+
+    margin-top: 50px;
+    padding-top: 3px;
+    padding-right: 1%;
+
+}
+ins.getnews{
+
+    height: 10px;
+
+}
+ins.getnews:hover{
+    background: rgba(0,0,0,0.5) center;
+    height: 10px;
+    border-radius: 5px;
+}
+img.picture{
+    align:center;
+    height:55%;
+    width:100%;
+
+}
+button.transparency{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+    color: white;
+    border: rgb(0, 0, 0);
+
+    width: 90px;
+}
+button.transparency:hover{
+    background: rgba(0, 0, 0, 0.40);
+}
+button.delete{
+     height: 2.3vw;
+     width: 2.3vw;
+     font-size: 2vw;
+     min-height: 10px;
+     min-width: 10px;
+
+     background: rgba(233, 233, 71, 0);
+     color: rgb(156, 156, 49);
+     align: right;
+
+     border: rgba(241,241,71,0);
+
+ }
+button.delete:hover {
+    color: rgb(80, 80, 28);
+}
+button.edit{
+    height: 2.3vw;
+    width: 2.3vw;
+    font-size: 2vw;
+    min-height: 10px;
+    min-width: 10px;
+
+    background: url("http://images.vfl.ru/ii/1489360895/9501e0a8/16437530_s.png") no-repeat center;
+    background-size: 1.8vw ;
+    color: rgb(156, 156, 49);
+    align: right;
+    border: rgba(241,241,71,0);
+
+}
+button.edit:hover {
+    /*color: rgb(80, 80, 28);*/
+    background: url("http://images.vfl.ru/ii/1489360811/fdeb3ffc/16437528.png") no-repeat center;
+    background-size: 1.8vw ;
+}
+.tegline
+{
+    height: 12%;
+
+    background: rgba(83, 83, 83, 0.8);
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px;
+
+    padding: 1%;
+}
+.newsblock
+{   padding: 3%;
+    height: 88%;
+}
+.line{
+    height: 2px;
+    background: black;
+}
+.tagspace{
+    width: 76%;
+    float: left;
+    padding: 2%;
+}
+.deletespace{
+    width: 12%;
+    float: right;
+
+    display: none;
+}
+
+.calendar{
+
+    width: 130px;
+    height: 30px;
+
+    background: rgba(43, 43, 43, 0.3);
+    color: navajowhite;
+    border-width: 1px;
+    border-style:  groove;
+    border-radius: 5px;
+
+
+}
+.calendar:hover{
+    background: rgba(43, 43, 43, 0.5);
+}
+.footer-name{
+
+    width: 50%;
+    float: left;
+}
+.tag-tag{
+    background: #a4ff00;
+    opacity: 0;
+}
+.select-tag{
+    background: #6d3f27;
+}
+.add-news{
+    height: 500px;
+    width: 600px;
+
+    align: centr;
+
+    background: rgb(255,255,255);
+
+    border: 15px solid #2D2735;
+    border-radius: 10px;
+
+    padding-left: 15px;
+    margin-top: 2vw;
+    margin-left: 15vw;
+
+    display: none;
+}
+.add-news-title{
+    height: 30px;
+    width: 150px;
+
+}
+.add-news-text{
+   resize: none;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.add-news-tags{
+    height: 30px;
+    width: 215px;
+    margin-left: 10px;
+
+}
+.add-news-tags-select{
+    background: rgba(0, 0, 0, 0.1);
+    height: 30px;
+    width: 100px;
+    border-radius: 7px;
+}
+.add-news-tags-button{
+    border-radius: 7px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.add-news-button{
+    border-radius: 7px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-right: 10px;
+}
+.full-new{
+    height: 90%;
+    width: 850px;
+
+    border-radius: 10px;
+    background: rgb(255,255,255);
+
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px ;
+    margin-top: 2vw;
+    margin-left: 15vw;
+
+    display: none;
+
+}
+
+.log-In{
+    width: 100px;
+    height: 30px;
+
+    background: rgba(43, 43, 43, 0.42);
+    color: navajowhite;
+    border-radius: 5px;
+    align-content: center;
+    border-color: rgba(0,0,0,0);
+    margin-top: 10px;
+
+    border: 2px solid #2D2735;
+
+
+}
+.log-In:hover{
+    background: rgba(43, 43, 43, 0.59);
+}
+.logIn-block{
+    width: 200px;
+    height: 120px;
+
+    background: rgba(43, 43, 43, 0.42);
+    border-radius: 10px;
+
+    margin-top: 10px;
+    padding: 10px;
+
+    display: none;
+
+}
+input.logIn-input{
+
+    padding: 2px;
+    margin-top: 4px;
+
+    border-radius: 5px;
+
+    border: 2px solid #2D2735;
+}
+.next-button{
+
+    background: rgba(43, 43, 43, 0.47);
+    color: navajowhite;
+
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px;
+
+    border: 2px solid #2D2735;
+
+
+}
+.next-button:hover{
+    background: rgba(43, 43, 43, 0.73);
+}
+.prev-button{
+
+    background: rgba(43, 43, 43, 0.47);
+    color: navajowhite;
+
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius:20px;
+
+    border: 2px solid #2D2735;
+
+}
+.prev-button:hover{
+    background: rgba(43, 43, 43, 0.74);
+}
