@@ -35,7 +35,7 @@
     width: 75%;
 
     float: left;
-
+    padding-left: 5vw ;
     margin: 1px auto;
 }
 .space30 {
@@ -44,7 +44,7 @@
     width: 30%;
     min-width: 150px;
 
-    float: right;
+    float: left;
 
     background: rgba(152, 152, 153, 0.7);
     background-size: 100%;
@@ -116,10 +116,46 @@ button.select{
     margin: 1px auto;
     float: left;
 }
-select.user{
+.user{
 
     width: 200px;
-    height: 40px;
+    height: 65px;
+
+    background: rgba(43, 43, 43, 0.3);
+
+    border-radius: 5px;
+    align-content: center;
+
+    margin-top: 10px;
+
+    display: none;
+
+}
+
+
+.button-user{
+
+    width: 200px;
+    height: 30px;
+
+    background: rgba(43, 43, 43, 0.3);
+    color: navajowhite;
+    border-radius: 5px;
+    align-content: center;
+
+    border: none;
+
+    /*display: none;*/
+
+}
+.button-user:hover {
+    background: rgba(43, 43, 43, 0.5);
+}
+
+select.autor-select{
+
+    width: 100px;
+    height: 30px;
 
     background: rgba(43, 43, 43, 0.3);
     color: navajowhite;
@@ -127,7 +163,7 @@ select.user{
     align-content: center;
 
 }
-select.user:hover {
+select.autor-select:hover {
     background: rgba(43, 43, 43, 0.5);
 }
 option.menu{
@@ -142,7 +178,23 @@ textarea.tag{
     height: 75%;
     width: 95%;
     font-size: larger;
+    resize: none;
 
+    margin-top: 10px;
+
+}
+.tag-select{
+    height: 25px;
+    width: 80px;
+
+    background: rgba(43, 43, 43, 0.3);
+    color: navajowhite;
+    border-radius: 5px;
+    align-content: center;
+
+}
+.tag-select:hover{
+    background: rgba(43, 43, 43, 0.5);
 }
 .footer{
     height: 50px;
@@ -246,6 +298,7 @@ button.edit:hover {
     width: 12%;
     float: right;
 
+    display: none;
 }
 
 .calendar{
@@ -275,4 +328,142 @@ button.edit:hover {
 }
 .select-tag{
     background: #6d3f27;
+}
+.add-news{
+    height: 500px;
+    width: 600px;
+
+    align: centr;
+
+    background: rgb(255,255,255);
+
+    border: 15px solid #2D2735;
+    border-radius: 10px;
+
+    padding-left: 15px;
+    margin-top: 2vw;
+    margin-left: 15vw;
+
+    display: none;
+}
+.add-news-title{
+    height: 30px;
+    width: 150px;
+
+}
+.add-news-text{
+   resize: none;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.add-news-tags{
+    height: 30px;
+    width: 215px;
+    margin-left: 10px;
+
+}
+.add-news-tags-select{
+    background: rgba(0, 0, 0, 0.1);
+    height: 30px;
+    width: 100px;
+    border-radius: 7px;
+}
+.add-news-tags-button{
+    border-radius: 7px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.add-news-button{
+    border-radius: 7px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-right: 10px;
+}
+.full-new{
+    height: 90%;
+    width: 850px;
+
+    border-radius: 10px;
+    background: rgb(255,255,255);
+
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px ;
+    margin-top: 2vw;
+    margin-left: 15vw;
+
+    display: none;
+
+}
+
+.log-In{
+    width: 100px;
+    height: 30px;
+
+    background: rgba(43, 43, 43, 0.42);
+    color: navajowhite;
+    border-radius: 5px;
+    align-content: center;
+    border-color: rgba(0,0,0,0);
+    margin-top: 10px;
+
+    border: 2px solid #2D2735;
+
+
+}
+.log-In:hover{
+    background: rgba(43, 43, 43, 0.59);
+}
+.logIn-block{
+    width: 200px;
+    height: 120px;
+
+    background: rgba(43, 43, 43, 0.42);
+    border-radius: 10px;
+
+    margin-top: 10px;
+    padding: 10px;
+
+    display: none;
+
+}
+input.logIn-input{
+
+    padding: 2px;
+    margin-top: 4px;
+
+    border-radius: 5px;
+
+    border: 2px solid #2D2735;
+}
+.next-button{
+
+    background: rgba(43, 43, 43, 0.47);
+    color: navajowhite;
+
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px;
+
+    border: 2px solid #2D2735;
+
+
+}
+.next-button:hover{
+    background: rgba(43, 43, 43, 0.73);
+}
+.prev-button{
+
+    background: rgba(43, 43, 43, 0.47);
+    color: navajowhite;
+
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius:20px;
+
+    border: 2px solid #2D2735;
+
+}
+.prev-button:hover{
+    background: rgba(43, 43, 43, 0.74);
 }
