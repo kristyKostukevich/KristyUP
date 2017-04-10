@@ -3,6 +3,7 @@ class ArticleMapper{
   constructor() {
     this.db = require('diskdb');
     this.db.connect(__dirname+'/../data', ['articles']);
+
   }
 
   getArticles() {

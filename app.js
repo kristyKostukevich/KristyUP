@@ -1,8 +1,9 @@
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
+let express = require('express');
+let app = express();
+let bodyParser = require('body-parser');
 let articleMapper = require(__dirname+'/server/db/data-mapper/article-mapper');
-
+let tagsMapper = require(__dirname+'/server/db/data-mapper/tags-mapper');
+let userMapper = require(__dirname+'/server/db/data-mapper/user-mapper');
 app.use(express.static('public'));
 
 app.listen(3000, function () {
@@ -17,27 +18,46 @@ app.get('/articles', (req, res) => {
   res.send(JSON.stringify(articleMapper.getArticles()));
 });
 
-app.get('/article/:id', function (req, res) {
+app.get('/article/:id',  (req, res) =>{
     let id = req.params.id;
     res.send(JSON.stringify(articleMapper.getArticleById(id)));
 });
-app.post('/articles', function (req, res) {
+app.post('/articles',  (req, res)=> {
   articleMapper.addArticle((req.body));
   res.json(req.body);
 });
-app.put('/articles', function (req, res) {
+app.put('/articles', (req, res)=> {
     articleMapper.deleteArticle(req.body.id);
     articleMapper.addArticle((req.body));
     res.json(req.body);
 });
-app.put('/articles/:id', function (req, res) {
+app.put('/articles/:id',  (req, res)=> {
     articleMapper.deleteArticle(req.params.id);
     articleMapper.addArticle((req.body));
     res.json(req.body);
 });
 
-app.delete('/article/:id', function (req, res) {
+app.delete('/article/:id',  (req, res)=> {
     let id = req.params.id;
     articleMapper.deleteArticle(id);
     res.json({removeId: id});
+});
+app.get('/tags', (req, res) => {
+    res.send(JSON.stringify(tagsMapper.getTags()));
+});
+app.post('/tags',  (req, res)=> {
+    tagsMapper.addTag((req.body));
+    res.json(req.body);
+});
+app.get('/user', (req, res) => {
+    res.send(JSON.stringify(userMapper.getUser()));
+});
+app.post('/user',(req, res)=> {
+    userMapper.addUser(req.body);
+    res.json(req.body);
+});
+app.delete('/user',  (req, res)=> {
+
+    userMapper.deleteUser();
+    res.end;
 });

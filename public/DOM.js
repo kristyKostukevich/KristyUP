@@ -58,6 +58,10 @@ var domService = (function () {
             login: "mrs.White",
             password: "2244wwh"
         },
+        {
+            login: "admin",
+            password: "admin"
+        },
 
     ]
 
@@ -231,6 +235,10 @@ function logInClick() {
                     return (temp.password === pass.value);
                 })){
                 domService.logIn(input.value);
+                let xhr = new XMLHttpRequest();
+                xhr.open('POST', '/user', true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send(JSON.stringify({user: input.value}));
                 return 0;
             }else{
                 alert("неверный пароль");
@@ -272,6 +280,10 @@ function exitFunk() {
     document.getElementsByClassName('user')[0].style.display = 'none';
     document.getElementById('main').style.display = 'block';
     logIn(undefined);
+    let xhr = new XMLHttpRequest();
+    xhr.open('DELETE', '/user', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send();
 }
 exit.addEventListener('click', exitFunk);
 
@@ -460,12 +472,13 @@ function addEditNews() {
             title: document.getElementsByClassName('add-news-title')[0].value,
             summary: document.getElementsByClassName('add-news-text')[0].value,
             createdAt: new Date(),
-            author: document.getElementById('login-name').value,
+            author: document.getElementsByClassName('button-user')[0].innerHTML,
             content: document.getElementsByClassName('add-news-text')[1].value,
             tags: tagsArrayAddNew,
-
-
         }
+
+        console.log(document.getElementById('login-name').value);
+
         if(!domService.addNew(article))
             alert("Не удалось добавить новость");
     }
