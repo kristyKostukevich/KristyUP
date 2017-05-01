@@ -227,29 +227,45 @@ function logInClick() {
     var input = document.getElementById('login-name');
     var pass = document.getElementById('password');
 
+    var promise = new Promise(function(resolve, reject) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', '/login', false)
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({username:input.value, password:pass.value}));
+        if(xhr.status == 200) domService.logIn(input.value);
+        else alert("неверные данные");
+        resolve(xhr);
+        xhr = new XMLHttpRequest();
+        xhr.open('POST', '/user', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({user: input.value}));
+        resolve.end;
 
-        if(domService.users.find(function (temp) {
-                return (temp.login === input.value);
-            })){
-            if(domService.users.find(function (temp) {
-                    return (temp.password === pass.value);
-                })){
-                var promise = new Promise(function(resolve, reject) {
-                    domService.logIn(input.value);
-                    let xhr = new XMLHttpRequest();
-                    xhr.open('POST', '/user', true);
-                    xhr.setRequestHeader('Content-Type', 'application/json');
-                    xhr.send(JSON.stringify({user: input.value}));
-                    resolve.end;
-                });
-                return 0;
-            }
-            else{
-                alert("неверный пароль");
-                return 0;
-            }
-        }
-     alert("неверный логин");
+    })
+
+     //    if(domService.users.find(function (temp) {
+     //            return (temp.login === input.value);
+     //        })){
+     //        if(domService.users.find(function (temp) {
+     //                return (temp.password === pass.value);
+     //            })){
+     //            var promise = new Promise(function(resolve, reject) {
+     //                domService.logIn(input.value);
+     //                let xhr = new XMLHttpRequest();
+     //                xhr.open('POST', '/login', true);
+     //                xhr.setRequestHeader('Content-Type', 'application/json');
+     //                // xhr.send(JSON.stringify({user: input.value}));
+     //                xhr.send(JSON.stringify({username:input, password:pass}));
+     //                resolve.end;
+     //            });
+     //            return 0;
+     //        }
+     //        else{
+     //            alert("неверный пароль");
+     //            return 0;
+     //        }
+     //    }
+     // alert("неверный логин");
 }
 var buttonIN = document.getElementById('entry');
 buttonIN.addEventListener('click', logInClick);
